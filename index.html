@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="script.js" type="text/javascript" ></script>
+</head>
+<body>
+  <main class="card">
+    <h1>💳 Payment details</h1>
+    <label>Card number</label>
+    <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" data-format="card"/>
+    <div class="row">
+      <div>
+        <label>Expiry</label>
+        <input type="text" placeholder="MM / YY" maxlength="7" data-format="expiry"/>
+      </div>
+      <div>
+        <label>CVC</label>
+        <input type="text" placeholder="123" maxlength="3" data-format="digits"/>
+      </div>
+    </div>
+    <div class="total">
+      <span>Total</span>
+      <strong>$49.99</strong>
+    </div>
+    <button class="submit">Pay now</button>
+  </main>
+</body>
+</html>
